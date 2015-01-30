@@ -28,7 +28,16 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+PASSWORD_HASHERS = (
+'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+)
+
 # Application definition
+
+LOGIN_URL = '/rango/login/'
+
+
 
 INSTALLED_APPS = (
     'django.contrib.admin',
