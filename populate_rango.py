@@ -62,7 +62,7 @@ def populate():
 
     add_page(cat=my_cat,
          title="My PythonAnywhere page",
-         url="https://www.pythonanywhere.com/user/2090886l/consoles/")
+         url="2090886l.pythonanywhere.com")
 
     # Print out what we have added to the user.
     for c in Category.objects.all():

@@ -156,7 +156,7 @@ def index(request):
 
     last_visit = request.session.get('last_visit')
     if last_visit:
-        last_visit_time = datetime.strptime(last_visit[:-7], "%Y-%m-%d %H:%M:%S")
+        last_visit_time = datetime.strptime(last_visit[:-7], '%Y-%m-%d %H:%M:%S')
 
         if (datetime.now() - last_visit_time).seconds > 0:
             # ...reassign the value of the cookie to +1 of what it was before...
